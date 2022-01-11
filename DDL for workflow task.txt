@@ -1,0 +1,5 @@
+CREATE TABLE Task
+(id INTEGER, name VARCHAR, desc VARCHAR);
+
+CREATE TABLE WorkFlowPoint
+(Id INTEGER, name VARCHAR, desc VARCHAR, pointType INTEGER, workflowPointSuccessId INTEGER, workflowPointFailureId INTEGER)
