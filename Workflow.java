@@ -22,7 +22,7 @@ public class Workflow {
 	
 
 	/**
-	 * Add points in workflow from WorkFlowPoint table
+	 * Adds points in workflow from WorkFlowPoint table
 	 * 
 	 * @param id
 	 * @param pointType (START,DECISION, END)
