@@ -24,14 +24,13 @@ public class Workflow {
 	/**
 	 * Adds points in workflow from WorkFlowPoint table
 	 * 
-	 * @param id
-	 * @param pointType (START,DECISION, END)
-	 * @param decisionPoint
-	 * @param taskId
-	 * @param success
-	 * @param failure
+	 * @param int id
+	 * @param int pointType (START(0),DECISION(1), END(2))
+	 * @param int Id of associated task
+	 * @param int Id of workflow point to be executed in success case
+	 * @param int Id of workflow point to be executed in failure case
 	 */
-	void addWorkflowPoint(int id, int pointType, boolean decisionPoint,Integer taskId, Integer success, Integer failure) {
+	void addWorkflowPoint(int id, int pointType, Integer taskId, Integer success, Integer failure) {
 			// TO-DO: GET WORK FLOW POINT FROM FACTORY CLASS
 			// This will include the code to be executed to process the output from the task,
 			// and evaluate if the task completed successfully
