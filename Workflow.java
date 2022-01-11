@@ -32,7 +32,7 @@ public class Workflow {
 	 * @param failure
 	 */
 	void addWorkflowPoint(int id, int pointType, boolean decisionPoint,Integer taskId, Integer success, Integer failure) {
-		    // TO-DO: GET WORK FLOW POINT FROM FACTORY CLASS
+			// TO-DO: GET WORK FLOW POINT FROM FACTORY CLASS
 			// This will include the code to be executed to process the output from the task,
 			// and evaluate if the task completed successfully
 			WorkflowPointImpl point = new WorkflowPointImpl(PointType.valueOfType(pointType), taskId, success, failure);
