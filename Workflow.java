@@ -14,7 +14,9 @@ public class Workflow {
 	 * @param id task id
 	 */
 	void addTask(int id) {
-		Task task = null; // TO-DO: GET TASK FROM FACTORY CLASS
+		// TO-DO: GET TASK FROM FACTORY CLASS
+		// This will include the code to be executed to process the input to the task
+		Task task = null; 
 		tasks.put(id, task);
 	}
 	
@@ -31,6 +33,8 @@ public class Workflow {
 	 */
 	void addWorkflowPoint(int id, int pointType, boolean decisionPoint,Integer taskId, Integer success, Integer failure) {
 		    // TO-DO: GET WORK FLOW POINT FROM FACTORY CLASS
+			// This will include the code to be executed to process the output from the task,
+			// and evaluate if the task completed successfully
 			WorkflowPointImpl point = new WorkflowPointImpl(PointType.valueOfType(pointType), taskId, success, failure);
 			workflowPoints.put(id, point);
 	}
